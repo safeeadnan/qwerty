@@ -2,8 +2,8 @@ name: Daily Morning Timetable Reminder
 
 on:
   schedule:
-    # 02:30 UTC = 08:00 AM IST (Indian Standard Time) every day
-    - cron: '30 2 * * *'
+    # 00:30 UTC = 06:00 AM IST (Indian Standard Time) every day
+    - cron: '30 0 * * *'
   # Allows triggering manually from the GitHub Actions tab anytime
   workflow_dispatch:
 
