@@ -25,8 +25,8 @@ RECIPIENT_EMAIL = "safeeadnan@gmail.com"  # Update with your desired recipient e
 
 # Sender Gmail settings (optional - requires a Gmail App Password)
 # Generate from: https://myaccount.google.com/apppasswords
-SENDER_EMAIL = ""         # e.g., yourgmail@gmail.com
-GMAIL_APP_PASSWORD = ""   # 16-character app password (not your normal password)
+SENDER_EMAIL = "safeeadnan@gmail.com"         # e.g., yourgmail@gmail.com
+GMAIL_APP_PASSWORD = "tdjq itif gypg ohra"   # 16-character app password (not your normal password)
 
 # ==============================================================================
 # WEEKLY TIMETABLE DATA
