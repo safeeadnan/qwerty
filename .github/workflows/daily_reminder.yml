@@ -1,0 +1,30 @@
+name: Daily Morning Timetable Reminder
+
+on:
+  schedule:
+    # 02:30 UTC = 08:00 AM IST (Indian Standard Time) every day
+    - cron: '30 2 * * *'
+  # Allows triggering manually from the GitHub Actions tab anytime
+  workflow_dispatch:
+
+jobs:
+  send-reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Send Daily Timetable Push Notification
+        run: |
+          python timetable_sync/daily_phone_reminder.py
